@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+    <title>chapter 2</title>
+    <meta charset="utf-8">
+   </head>
+
+<body>
+    <script>
+        // var arr = [10,20,30,40,50];
+        // var last =arr[arr.length-1]; 
+        // console.log(last);
+
+
+        // var beatles=Array(4);
+        // beatles[0]="John";
+        // beatles[1]="Paul";
+        // beatles[2]="George";
+        // beatles[3]="Ringo";
+        // console.log(beatles[2]);
+
+        //   var beatles=Array("John","Paul","George","Ringo");
+        //   console.log(beatles[2]);
+          
+        //   var lennon=Object();//没有修改array对象的属性，使用通用的对象
+        //   lennon.name="John";
+        //   lennon.year= 1940;
+        //   lennon.living=false;
+        //   console.log(lennon);
+
+        //   var beatles=Array();
+        //   beatles[0]=lennon;
+        //   console.log(beatles[0].name);
+           
+        //    var beatles={};
+        //    beatles.vocalist=lennon;
+        //    console.log(beatles.vocalist.name);
+        //    console.log(beatles.vocalist.year);
+        //    console.log(beatles.vocalist.living);
+
+
+        //    if(1>2){
+        //        alert("The world has gone mad!");
+        //     }else{
+        //         alert("All is well with the world");
+        //     }
+
+            // var val=0;//在条件表达式中的条件若不是boolean的值，则条件表达式会自动转换到boolean类型
+            // if(val){
+            //     console.log("真");
+            // }else{
+            //     console.log("假");//boolean值为false的几种情况   “”，0，undefined，null，false
+            // }
+
+            //  var my_mood="happy";
+            //  var your_mood="sad";
+            //  if(my_mood=your_mood){//将your_mood赋值给变量my_mood
+            //      alert("We both feel the same");
+            //  }
+
+             
+            //   var my_mood="happy";
+            //  var your_mood="sad";
+            //   if(my_mood==your_mood){//判断等于
+            //      alert("We are feeling different moods.");
+            //  }else{
+            //      alert("wrong");
+            //  }
+
+            //  if(my_mood!=your_mood){
+            //      alert("We are feeling different moods")
+            //  }
+
+            //   var a=false;
+            //   var b="";
+            //   if(a===b){//严格等于
+            //       alert("a equals b");
+            //   }
+
+
+            // var count=1;//初始值
+            // while(count<11){//条件
+            //     alert(count);
+            //     count++;//对判断条件的操作
+            // }
+
+    //    var count=1;
+    //    //do  while写法 对循环控制条件的求值发生在循环结束之后，至少执行一次
+    // //    do{
+    // //        alert(count);
+    // //        count++;
+    // //    }while(count<1)
+
+    //    //while写法 对循环控制条件的求值发生在循环结束之前,若取值为false,则不执行
+    //  while(count<1){
+    //       alert(count);
+    //       count++;
+    //    }
+
+       //while语法： 
+    //    while (condition){
+    //        statement;
+    //        increment;
+    //    }
+
+    //    //for语法 优点：循环控制结构更加的清晰
+    //      for(initial condition;test condition;alert condition){
+    //          statements;
+    //      }
+
+
+        //  for(var count=1;count<11;count++){
+        //      alert(count);
+        //  }
+//函数是一组允许在代码中随时调用的语句，先定义再调用
+//函数的真正威力：传递不同的数据（参数 argument),完成预定的操作
+         
+    // function shout(){
+    //      var beatles=Array("John","Paul","Geogre","Ringo");
+    //      for(var count=0;count<beatles.length;count++){
+    //          alert(beatles[count]);
+    //      }
+    //  }
+
+    //  shout();
+
+    //语法：
+    //   function name(arguments){
+    //       statements;
+    //   }
+
+    // function multiply(num1,num2){
+    //     var total=num1*num2;
+    //     alert(total);
+    // }
+    //  multiply(10,20);
+
+
+  //变量的作用域
+    //  function square(num){
+    //     total=num*num;//缺少var,成为全局变量
+    //      return total;
+    //  }
+    //  var total=50;
+    //  var number=square(20);
+    //  alert(total);//400
+
+    //  function square(num){
+    //    var total=num*num;//添加var,成为局部变量
+    //      return total;
+    //  }
+    //  var total=50;
+    //  var number=square(20);
+    //  alert(total);//50
+
+
+    //    var a=1;
+    //    function test2(){
+    //         console.log("变量提升");
+    //         console.log(a);
+    //         var a = 2;
+    //    }
+    //    test2();
+    //    console.log(a);
+
+    var arr = [];
+    console.log(arr.length);
+    // 当数组的实际长度小于索引值时，或自动扩充数组
+    arr[5] = 1;
+    console.log(arr.length);
+    // 数组不会自动收缩
+    arr[3] = 4;
+    console.log(arr.length);
+    // 截断数组长度的唯一方式就是通过设置length进行截断
+    arr.length = 2;
+    console.log(arr.length);
+
+
+     
+
+
+
+    </script>
+    
+</html>
